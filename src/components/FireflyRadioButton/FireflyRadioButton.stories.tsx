@@ -1,16 +1,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import FireflyButton from './FireflyButton';
+import FireflyRadioButton from './FireflyRadioButton';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Firefly/FireflyButton',
-  component: FireflyButton,
-} as ComponentMeta<typeof FireflyButton>;
+  title: 'Firefly/FireflyRadioButton',
+  component: FireflyRadioButton,
+} as ComponentMeta<typeof FireflyRadioButton>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof FireflyButton> = (args) => <FireflyButton {...args} />;
+const Template: ComponentStory<typeof FireflyRadioButton> = (args) => <FireflyRadioButton {...args} />;
 
 export const HelloWorld = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
@@ -22,6 +22,6 @@ HelloWorld.args = {
 export const ClickMe = Template.bind({});
 ClickMe.args = {
   label: 'Click me!',
-  variant: 'contained',
-  disabled: true
+   variant: 'contained',
+   disabled: true
 };
